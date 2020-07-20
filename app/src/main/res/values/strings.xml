@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ThreadApplication</string>
+    <string-array name="dept">
+        <item>CSE</item>
+        <item>MECH</item>
+        <item>IT</item>
+        <item>FT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>CIVL</item>
+        <item>AUTO_MOBILE</item>
+        <item>BIO</item>
+    </string-array>
+    <string-array name="year">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="facebook_application_id" translatable="false">com.example.threadapplication</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbcom.example.threadapplication</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flash_text">Did you Know that Sona college was started in the year 1999</string>
+    <string name="subscribe_text">subscribing events lets you recieve live updates through notifications</string>
+</resources>

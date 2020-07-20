@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".user_validation.UserDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
+           <TextView
+               android:text="Name:"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/name_text_label"/>
+            <EditText
+                android:layout_below="@id/name_text_label"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="name" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="Phone_Number:"
+                android:layout_below="@id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_number_label"/>
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_number_label"
+                android:layout_marginTop="15dp"
+                android:hint="phone_number"
+                android:maxLength="10" />
+            <TextView
+                android:text="College_Name:"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/college_name_label"/>
+            <EditText
+                android:id="@+id/college_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/college_name_label"
+                android:layout_marginTop="15dp"
+                android:hint="college_name" />
+
+            <TextView
+                android:id="@+id/year_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/college_name"
+                android:layout_marginTop="30dp"
+                android:inputType="number"
+                android:text="year"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/year"
+                android:background="@color/colorAccent"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/year_label" />
+
+            <TextView
+                android:id="@+id/dept_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/year"
+                android:layout_marginTop="30dp"
+                android:text="dept"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/dept"
+                android:layout_width="150dp"
+                android:background="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dept_label" />
+
+            <Button
+                android:background="@color/colorAccent"
+                android:id="@+id/create_usr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dept"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/white"
+                android:text="create_user" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

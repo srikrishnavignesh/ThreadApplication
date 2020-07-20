@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffab91</color>
+    <color name="colorPrimaryDark">#ff8a65</color>
+    <color name="colorAccent">#ff8a65</color>
+    <color name="not_started">@android:color/holo_blue_bright</color>
+    <color name="in_progress">@android:color/holo_purple</color>
+    <color name="end_soon">@android:color/holo_green_light</color>
+    <color name="ended">@android:color/holo_red_light</color>
+    <color name="text_color">#71C2FF</color>
+</resources>
